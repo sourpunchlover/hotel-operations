@@ -4,7 +4,7 @@ public class Room {
     private int numberOfBeds;
     private double price;
     private boolean occupied;
-    private boolean dirty;
+    private boolean dirty;// can put these on one line
 
     //Constructor
     public Room(int numberOfBeds, double price, boolean occupied, boolean dirty) {
@@ -32,6 +32,6 @@ public class Room {
     }
 
     public boolean isAvailable() {
-        return !isOccupied() && !isDirty();
+        return !this.isOccupied() && !this.isDirty();//add the this. to be explicit
     }
 }
